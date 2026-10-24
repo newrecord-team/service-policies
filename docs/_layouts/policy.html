@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{% assign service_slug = page.service_slug | default: page.service | slugify %}
+{% assign service_url = '/' | append: service_slug | append: '/' %}
+{% assign history_url = service_url | append: 'history/' %}
+<div class="document-wrap">
+  <nav class="breadcrumbs" aria-label="현재 위치"><a href="{{ '/' | relative_url }}">정책 센터</a><span aria-hidden="true">/</span><a href="{{ service_url | relative_url }}">{{ page.service | escape }}</a><span aria-hidden="true">/</span><span>{{ page.title | escape }}</span></nav>
+  <header class="document-header">
+    <p class="eyebrow">{{ page.service | escape }} · 정책 문서</p>
+    <h1>{{ page.title | escape }}</h1>
+    <dl class="policy-meta"><div><dt>시행일</dt><dd>{{ page.effective_date | date: '%Y.%m.%d' }}</dd></div><div><dt>게시일</dt><dd>{{ page.published_date | date: '%Y.%m.%d' }}</dd></div><div><dt>버전</dt><dd>{{ page.version | escape }}</dd></div></dl>
+  </header>
+  {% if page.current_url %}<aside class="archive-notice" aria-label="이전 버전 안내"><strong>이전 버전의 정책입니다.</strong><p>이 문서는 개정 이력을 확인하기 위해 보관하고 있습니다. <a href="{{ page.current_url | relative_url }}">현재 정책 확인하기 →</a></p></aside>{% endif %}
+  <article class="policy-body">{{ content }}</article>
+  <nav class="document-bottom" aria-label="정책 탐색"><a href="{{ service_url | relative_url }}">← {{ page.service | escape }} 정책 목록</a><a href="{{ history_url | relative_url }}">변경 이력 보기 →</a></nav>
+</div>

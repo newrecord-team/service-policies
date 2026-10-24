@@ -1,0 +1,11 @@
+title: 돌돌소프트 정책 센터
+description: 돌돌소프트 서비스의 이용약관과 개인정보처리방침을 안내합니다.
+url: "https://newrecord-team.github.io"
+baseurl: "/service-policies"
+lang: ko-KR
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+exclude:
+  - README.md
