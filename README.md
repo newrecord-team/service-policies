@@ -9,6 +9,7 @@
 - Nudge 정책: https://newrecord-team.github.io/service-policies/nudge/
 - 이용약관: https://newrecord-team.github.io/service-policies/nudge/terms/
 - 개인정보처리방침: https://newrecord-team.github.io/service-policies/nudge/privacy/
+- 고객지원: https://newrecord-team.github.io/service-policies/nudge/support/
 - 변경 이력: https://newrecord-team.github.io/service-policies/nudge/history/
 
 GitHub repository `newrecord-team/service-policies`의 Pages 설정에서 **Deploy from a branch → main → /docs**를 선택합니다. GitHub Pages의 기본 Jekyll build를 사용하며 별도 theme, plugin, framework, custom workflow는 사용하지 않습니다. Custom domain은 설정하지 않습니다. `_config.yml`의 `url`과 `baseurl`을 유지하고 내부 링크에는 `relative_url`을 적용합니다.
@@ -42,9 +43,11 @@ JavaScript, 분석 도구, 쿠키 설정 코드, 외부 font를 포함하지 않
 
 현재 정책은 production에서 Firebase 수집을 비활성화한 상태를 기준으로 합니다. 활성화 전에 수집 항목·목적·제공 및 이전·보관 기간과 필요한 고지·동의를 다시 검토하고, 실제 동작과 정책 문서를 함께 갱신해야 합니다. 정책 게시만으로 수집 기능을 활성화하지 않습니다.
 
+2026-10-25 개정한 Nudge 정책 1.1.0은 표시 이름·월간/연간 자동 갱신 구독·집중 잠금과 관련 기기 내 정보 처리를 반영합니다. 1.0.0 원문은 버전별 보관본에 유지하며, App Store 지원 URL로 사용할 정적 고객지원 페이지를 제공합니다. 출시 완료나 production 수집 활성화를 뜻하지 않습니다.
+
 ### 실제 운영 전 확인
 
-- Nudge 유료 판매·체험을 시작할 때 약관의 준비 중 안내와 실제 판매 조건을 함께 갱신합니다.
+- Nudge 유료 판매·체험의 제공 여부와 실제 판매 조건이 앱·Apple 구매 화면 및 약관의 안내와 일치하는지 확인합니다.
 - 고객지원은 공개된 Gmail 주소를 사용합니다. Google이 안내한 국외 처리 가능성을 문서에 설명했지만, 그 설명만으로 국내 개인정보보호법상 국외이전 근거와 국가·수령인 연락처·보관기간 등 고지 요건의 충족을 확정한 것은 아닙니다. 실제 이메일 서비스 계약·처리 흐름과 필요한 절차를 확인해 문서에 반영합니다. 일반 문의의 삭제 절차도 운영에서 이행해야 합니다.
 - App Store에 필요한 사업자·판매자 정보는 별도로 실제 등록 정보와 맞춥니다. 공개 정책 저장소에 사업자등록증 원본·생년월일·인증정보를 올리지 않습니다.
 - 문서의 기술적 동작 대조와 게시 성공은 법률 적합성, 앱 심사 통과 또는 출시 승인을 대신하지 않습니다.
